@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students List</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+            <div class="container py-5">
+                <div class="form-group my-3">
+                    <label for="name">Student Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter the name">
+                </div>
+                <div class="form-group my-4">
+                    <label for="grade">Student Grade</label>
+                    <input type="number" class="form-control" id="grade" placeholder="Enter the grade" min="0" max="100">
+                </div>
+                <button id="add" class="btn btn-outline-primary">Add</button>
+            
+                <div class="mt-4">
+                    <label>Sort:</label>
+                    <select id="sortSelect" class="border p-2">
+                        <option value="name">Name</option>
+                        <option value="grades">Grade</option>
+                    </select>
+                </div>
+                <div class="mt-4">
+                    <label>Filter:</label>
+                    <select id="filterSelect" class="border p-2">
+                        <option value="all">All</option>
+                        <option value="passed">Passed</option>
+                        <option value="failed">Failed</option>
+                    </select>
+                </div>
+                <table class="table text-center my-5">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student Grade</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div> 
+           
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/main.js"></script>
+  </body>
+</html>
